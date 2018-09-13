@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+
+/**---STYLING FOR ASIDE---**/
+
+aside {
+  background-color: #354052;
+}
+
+hr {
+  border-color: #2f3746d;
+  background-color: #2f3746d
+}
+
+.aside-image-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  justify-content: center;
+}
+
+.aside-image {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.aside-header-text {
+  color: #939FB2;
+  display: inline-block;
+  font-size: .8rem;
+
+}
+
+.fa-angle-down {
+  /*padding: 3%;*/
+}
+
+.aside-ul-header {
+  color: #62718A;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10%;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.aside-lists {
+  align-content: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  padding: 0 10%;
+}
+
+.yes {
+  font-family: 'Lato', sans-serif;
+}
+
+.aside-icons {
+  color: #939FB2;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  padding: 2px;
+  width: 15px;
+}
+
+.aside-icon-text {
+  color: #939FB2;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10%;
+  font-size: 10px;
+}
+
+
