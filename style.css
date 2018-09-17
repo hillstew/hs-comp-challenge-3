@@ -212,10 +212,159 @@ a {
 }
 
 
+/**---PAGE BREAK---**/
+
+.page-breaks-section {
+  background-color: #ecf0f4;
+}
+
+.left-page-break, 
+.right-page-break {
+  border: 1px solid #d3dae1;
+  display: inline-block;
+  width: 45%;
+}
+
+.fa-angle-up {
+  color: #9ca3ae; 
+  font-size: 30px;
+}
+
+/**---JOB SECTION---**/
+
+.job-section {
+  background-color: #ecf0f4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.job-table table { 
+  border-collapse: collapse; 
+  text-align: left; 
+  width: 100%; 
+} 
+
+.job-table {
+  font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif; 
+  background: #fff; 
+  overflow: hidden; 
+}
+
+.job-table table td, 
+.job-table table th { 
+  padding: 20px 20px; 
+}
+
+.job-table table thead th {
+  background-color: #717D92; 
+  color: #FFFFFF; 
+  font-size: 15px; 
+  font-weight: normal; 
+} 
+
+.job-table table thead th:first-child { 
+  border: none; 
+}
+
+.job-table table tbody td { 
+  color: #6F7987; 
+  font-size: 12px;
+  border-bottom: 1px solid #EFF2F5;
+  font-weight: normal; 
+}
+
+.job-table table tbody td:first-child { 
+  border-left: none; 
+}
+
+.job-table table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .graph-circle-section {
   background-color: #ecf0f4;
   display: grid;
   grid-template-columns: 60% 40%;
+  height: 300px;
 }
 
 .graph-image {
@@ -255,7 +404,7 @@ a {
 
 @keyframes progress {
   0% {
-    stroke-dasharray: 0 100;
+    stroke-dasharray: 0 80;
   }
 }
 
