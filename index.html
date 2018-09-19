@@ -46,10 +46,10 @@
       <section class="aside-checkbox-section">
         <p class="aside-ul-header">Categories</p>
         <ul class="aside-lists">
-          <li><i class="fas fa-check-square aside-icons"></i><p class="aside-icon-text">Administration</p></li>
-          <li><i class="fas fa-square aside-icons"></i><p class="aside-icon-text">Design</p></li>
-          <li><i class="fas fa-square aside-icons"></i><p class="aside-icon-text">Executive</p></li>
-          <li><i class="fas fa-square aside-icons"></i><p class="aside-icon-text">Human Resources</p></li>
+          <li><i class="fas fa-check-square aside-icons" style="color:#FFD507"></i><p class="aside-icon-text">Administration</p></li>
+          <li><i class="fas fa-square aside-icons" style="color:#2AAFFF"></i><p class="aside-icon-text">Design</p></li>
+          <li><i class="fas fa-square aside-icons" style="color:#E81960"></i><p class="aside-icon-text">Executive</p></li>
+          <li><i class="fas fa-square aside-icons" style="color:#00AA8A"></i><p class="aside-icon-text">Human Resources</p></li>
         </ul>
       </section>
     </aside>
@@ -64,10 +64,11 @@
       </nav>
 
       <section class="dashboard-section">
+
         <section>
           <h2>Customer Service Representative</h2>
           <i class="fas fa-map-pin dashboard-job-info"></i>
-          <p class="dashboard-job-info dashboard-city">San Francisco, CA &#8226;</p>
+          <p class="dashboard-job-info dashboard-city">San Francisco, CA &#8226; </p>
           <a href class="dashboard-job-info dashboard-preview"="https://www.turing.io">Preview this post</a>
         </section>
 
@@ -89,29 +90,13 @@
           <li class="dashboard-buttons">BROADCAST</li>
           <li class="dashboard-buttons">NOTIFICATIONS</li>
         </ul>
+
       </section>
 
       <section class="graph-circle-section">
-        <section>
-          <section>
+
+        <section class="flex-wrapper-section">
             <div class="flex-wrapper">
-              <div class="single-chart">
-                <svg viewBox="0 0 36 36" class="circular-chart orange">
-                  <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                  <path class="circle"
-                  stroke-dasharray="30, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                  <text x="18" y="20.35" class="percentage">3154</text>
-                </svg>
-              </div>
-            
               <div class="single-chart">
                 <svg viewBox="0 0 36 36" class="circular-chart green">
                   <path class="circle-bg"
@@ -125,10 +110,12 @@
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
-                  <text x="18" y="20.35" class="percentage">1546</text>
+                  <text x="18" y="19" class="circle-number">3154</text>
+                  <text x="18" y="23" class="circle-text">APPLICANTS</text>
+
                 </svg>
               </div>
-
+            
               <div class="single-chart">
                 <svg viewBox="0 0 36 36" class="circular-chart blue">
                   <path class="circle-bg"
@@ -137,23 +124,43 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
                   <path class="circle"
-                  stroke-dasharray="90, 100"
+                  stroke-dasharray="30, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
-                  <text x="18" y="20.35" class="percentage">912</text>
+                  <text x="18" y="19" class="circle-number">1546</text>
+                  <text x="18" y="23" class="circle-text">INTERVIEWS</text>
+                </svg>
+              </div>
+
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart purple">
+                  <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                  stroke-dasharray="65, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="19" class="circle-number">912</text>
+                  <text x="18" y="23" class="circle-text">FORWARDS</text>
               </svg>
             </div>
-          </section>
-      </section>
+        </section>
 
-      <section>
-        <img class="graph-image" src="images/graph.png">
+        <section class="graph-image-section">
+          <img class="graph-image" src="images/graph.png">
+        </section>
+
+        <button class="total-cirlce-btn">TOTALS Out of 5,231 views</button>
+        <button class="bar-graph-btn">APPLICANTS/DAY</button>
+        
       </section>
-      <button class="total-cirlce-btn">TOTALS Out of 5,231 views</button>
-      <button class="bar-graph-btn">APPLICANTS/DAY</button>
-    </section>
 
   <section class="page-breaks-section">
     <hr class="left-page-break">
@@ -163,49 +170,50 @@
 
 <section class="job-section">
   <section class="job-table-section">
-    <div class="job-table"><table>
-      <thead>
-        <tr>
-          <th>JOB DESCRIPTION</th>
-          <th>
-            <button class="job-table-edit-btn"><i class="fas fa-pencil-alt"></i>EDIT</button>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>POSITION TITLE</td>
-          <td>Customer Service Representative</td>
-        </tr>
-        <tr>
-          <td>LOCATION</td>
-          <td>San Francisco, CA</td>
-        </tr>
-        <tr>
-          <td>EMPLOYMENT TYPE</td>
-          <td>Full-time</td>
-        </tr>
-        <tr>
-          <td>EXPERIENCE</td>
-          <td>Mid-level</td>
-        </tr>
-        <tr>
-          <td>STATUS</td>
-          <td>Open</td>
-        </tr>
-        <tr>
-          <td>DESCRIPTION</td>
-          <td>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</td>
-        </tr>
-        <tr>
-          <td>HIRING LEAD</td>
-          <td>Tom Tizzy</td>
-        </tr>
-        <tr>
-          <td>APPROVED SALARY</td>
-          <td>$58,000</td>
-        </tr>
-      </tbody>
+    <div class="job-table">
+      <table>
+        <thead>
+          <tr>
+            <th>JOB DESCRIPTION</th>
+            <th>
+              <button class="job-table-edit-btn"><i class="fas fa-pencil-alt"></i>EDIT</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>POSITION TITLE</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>LOCATION</td>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <td>EMPLOYMENT TYPE</td>
+            <td>Full-time</td>
+          </tr>
+          <tr>
+            <td>EXPERIENCE</td>
+            <td>Mid-level</td>
+          </tr>
+          <tr>
+            <td>STATUS</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>DESCRIPTION</td>
+            <td>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</td>
+          </tr>
+          <tr>
+            <td>HIRING LEAD</td>
+            <td>Tom Tizzy</td>
+          </tr>
+          <tr>
+            <td>APPROVED SALARY</td>
+            <td>$58,000</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </section>
@@ -219,20 +227,20 @@
       <button class="job-side-buttons linkedin-button">
         <i class="fab fa-linkedin"></i>Post to Linkedin</button>
     </div>
-    <div>
-      <h2><i class="fas fa-globe-americas"></i>Link to this job</h2>
-      <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-      <input type="text"><button>Copy</button>
+    <div class="job-side-widgets">
+      <h3><i class="fas fa-globe-americas job-side-icons"></i>Link to this job</h3>
+      <p class="job-widget-text">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+      <input type="text" class="job-side-inputs"><button class="job-button-input">Copy</button>
     </div>
-    <div>
-      <h2><i class="far fa-window-maximize"></i>Use the Button Widget</h2>
-      <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-      <input type="text"><button>Copy</button>
+    <div class="job-side-widgets">
+      <h3><i class="far fa-window-maximize job-side-icons"></i>Use the Button Widget</h3>
+      <p class="job-widget-text">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+      <input type="text" class="job-side-inputs"><button class="job-button-input">Copy</button>
     </div>
-    <div>
-      <h2><i class="fas fa-paper-plane"></i>Upload</h2>
-      <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-      <input type="text">
+    <div class="job-side-widgets no-border">
+      <h3><i class="fas fa-paper-plane job-side-icons"></i>Upload</h3>
+      <p class="job-widget-text">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+      <input type="text" class="job-side-inputs upload-input" placeholder="tomtizzy@gmail.com">
     </div>
   </section>
 </section>
