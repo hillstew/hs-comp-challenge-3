@@ -67,9 +67,9 @@ hr {
 .aside-lists li:hover {
   background-color: #313948;
   border-left: 1.9px solid #48a3f3;
+  cursor: pointer;
   width: 150px;
 }
-
 
 .aside-icons {
   color: #939FB2;
@@ -99,15 +99,16 @@ nav {
 .nav-icons {
   color: #7d8593;
   font-size: 1.1rem;
-  margin: auto;
   height: 60px;
-  width: 60px;
+  margin: auto;
   padding: 20px;
+  width: 60px;
 }
 
 .nav-icons.hover:hover {
   background-color: #48a3f3;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .fa-bars {
@@ -202,27 +203,29 @@ a {
 .dashboard-icon-btns:hover {
   background-color: #48a3f3;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .open-btn {
   border-radius: 20px;
+  font-size: 14px;
   height: 40px;
   text-align: center;
   width: 80px;
-  font-size: 14px;
 }
 
 .dashboard-buttons {
   color: #9199A8;
-  font-size: 15px;
-  padding: 15px 0;
-  margin-right: 40px;
   display: inline;
+  font-size: 15px;
+  margin-right: 40px;
+  padding: 15px 0;
 }
 
 .dashboard-buttons:hover {
   border-bottom: 2.3px solid #48A3F3;
   color: #62656F;
+  cursor: pointer;
 }
 
 /**---GRAPH & CIRCLES SECTION---**/
@@ -242,14 +245,15 @@ a {
 
 .graph-image {
   height: 220px;
-  width: 440px;
   margin-top: 15px;
+  width: 440px;
 }
+
 
 .total-circle-btn {
   background-color: #fafafc;
-  border: 1px solid #d3dae1;
   border-radius: 30px;
+  border: 1px solid #d3dae1;
   color: #616b7c;
   font-size: 12px;
   height: 30px;
@@ -259,8 +263,8 @@ a {
 
 .bar-graph-btn {
   background-color: #fafafc;
-  border: 1px solid #d3dae1;
   border-radius: 25px;
+  border: 1px solid #d3dae1;
   color: #616b7c;
   font-size: 12px;
   height: 30px;
@@ -271,11 +275,13 @@ a {
 .total-circle-btn:hover {
   background-color: #48a3f3;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .bar-graph-btn:hover {
   background-color: #48a3f3;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .flex-wrapper-section {
@@ -462,7 +468,6 @@ h3 {
   height: 35px;
 }
 
-
 .job-side-icons {
   margin-right: 10px;
 }
@@ -531,10 +536,6 @@ h3 {
   border-bottom: none; 
 }
 
-.upload-input {
-  /*width: 273px;*/
-}
-
 
 @media only screen and (max-width: 1160px) {
   body {
@@ -552,7 +553,7 @@ h3 {
 
 @media only screen and (max-width: 954px) {
   .dashboard-buttons {
-    margin-right: 30px;
+    margin-right: 25px;
   }
   .graph-image {
     height: 180px;
@@ -580,14 +581,10 @@ h3 {
   .graph-circle-section {
     display: grid;
     grid-template-columns: 1fr;
-    height: 300px;
+    height: 500px;
   }
-   .graph-image {
-    display: none;
-  }
-  .total-circle-btn,
-  .bar-graph-btn {
-    display: none;
+   .flex-wrapper-section {
+    height: 200px;
   }
   .job-side-buttons {
     font-size: 12px;
@@ -614,21 +611,21 @@ h3 {
     width: 97%;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
   .flex-wrapper-section {
-    height: 100px;
+    height: 620px;
   }
   .flex-wrapper {
     align-items: center;
     flex-flow: column;
   }
   .single-chart {
-    width: 60%;
+    width: 55%;
   }
   .graph-image {
     height: 160px;
-    margin-top: 700px;
-    width: 320px;
+    margin: 60px 0;
+    width: 310px;
     display: block;
   }
   .left-page-break, 
@@ -638,17 +635,25 @@ h3 {
   width: 40%;
   }
   .page-breaks-section {
-    padding-top: 800px;
-    padding-left: 40px;
-  }
-  .total-circle-btn {
-    display: none;
+    padding-top: 480px;
   }
   nav {
   display: none;
+  /*justify-content: space-around;*/
   }
   .job-side-inputs {
   width: 93%;
+  }
+  .dashboard-section {
+    display: block;
+    margin: 15px;
+  }
+  .dashboard-icon-buttons {
+    height: 20px;
+    width: 20px;
+  }
+  .dashboard-links {
+    padding: 0 45px;
   }
 }
 
